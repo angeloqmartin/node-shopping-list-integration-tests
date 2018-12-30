@@ -63,11 +63,10 @@ describe("Recipes", function() {
             expect(res).to.be.json;
             expect(res).to.be.a("object");
             expect(res.body.id).to.not.equal(null);
-            // response should be deep equal to `newItem` from above if we assign
-            //`id` to it from `res.body.id`
-            expect(res.body).to.deep.equal(
-                Object.assign(newItem, {id: res.body.id})
-            );
+            expect(res.body).to.include.keys('id', 'name', 'ingredients');
+            expect(res.body.name).to.be.equal(newItem.name);
+            expect(res.body.ingredients).to.be.a('array');
+            expect(res.body.ingredients).to.include.members(newItem.ingredients);
         }); 
     });
     
