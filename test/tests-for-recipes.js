@@ -99,7 +99,7 @@ describe("Recipes", function() {
             return chai
             .request(app)
             .put(`/recipes/${updateData.id}`).send(updateData);
-        })
+        }
 
         // prove that the PUT request has right status code
         // and returns updated item
