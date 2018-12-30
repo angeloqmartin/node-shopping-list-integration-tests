@@ -52,7 +52,7 @@ describe("Recipes", function() {
     //  2. inspect response object and prove it has right
     //  2a. status code and that the returned object has an `id`
 
-    it("should add an item on POST", function() {
+    it("should add an item on git ", function() {
         const newItem = { name: "coffee", ingredients: ["water", "beans"] };
         return chai
         .request(app)
