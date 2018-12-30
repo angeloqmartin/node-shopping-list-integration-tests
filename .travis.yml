@@ -1,2 +1,9 @@
-language: node_js;
+language: node_js
 node_js: node
+deploy: desolate-taiga-62203
+  provider: heroku
+  api_key:
+    secure: OpevZJM56+NNGuVDIvs7eAk8IWekLMO/pEit0bWGbIcwUEBRINSjPIJSWGrewwD9jZfejGUDFHo8YTXDyoqNDrUnqNIMAZVMuLU2tkFQS1sFilEXXNvtOkYsZ90NZ0My2XOuY7et+OChxePTWeiwmZTL/lFFEAVcDZ6xsbJjGGKWaejmPsM4kUoiS4ENd+L95teVN0PklH4f8DoHrwKjCLPJ12nkopUxUyI+G8OvGAO8BBFFzE5se3FmaHk0EkiSGyQR5Q8txJF9+blvwHKw3R54mG5XUyGo5Z2GRbgq5H6SAJbCy8YawZei5n8IEtDli9lLiV8AG5Q5Lv2IkepiKzNtAtDmeryUztAsH7NefWF9hqqhnAoH87SKl+pJtxOFAGyHrOT/IJbPu3JyGBJTuPFNo6TJc7Dq5eVGQWoBq//Fra11yo4dRUem1/cQ9AfmkuoskPph3vgJaCZHCrJKq7zJPWwdWipKy2ECba6/NceFIwcY1RPHYeYrKjdG/x2ie4xFEo6Mb90XC7+DAKHIHjfACgw5NkIa3xpwdt72lqKevtrls/owNsaB764RQf3gm+YKJgwiZt9EpdAIt/bCBwlPF4sm6nfYNnX9uMNdzObSJnIyrKM72qutMC1T0WLighbzxR0vgk3KlRq5dEf5Xe64LJ18uC4fe6uYWZN3cd8=
+  app: node-shopping-list-integration-tests
+  on:
+    repo: angeloqmartin/node-shopping-list-integration-tests
